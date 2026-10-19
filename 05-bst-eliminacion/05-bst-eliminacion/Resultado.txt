@@ -1,0 +1,112 @@
+##### ARBOL ORIGINAL #####
+[Original] Altura: 4 | Inorden: [20, 40, 60, 80, 100, 110, 120, 140] | BST valido: SI
+  80 -> izq: 40, der: 120
+  40 -> izq: 20, der: 60
+  20 -> izq: null, der: null
+  60 -> izq: null, der: null
+  120 -> izq: 100, der: 140
+  100 -> izq: null, der: 110
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+
+=== CASO 1: ELIMINAR NODO HOJA (20) ===
+[ANTES] Altura: 4 | Inorden: [20, 40, 60, 80, 100, 110, 120, 140] | BST valido: SI
+  80 -> izq: 40, der: 120
+  40 -> izq: 20, der: 60
+  20 -> izq: null, der: null
+  60 -> izq: null, der: null
+  120 -> izq: 100, der: 140
+  100 -> izq: null, der: 110
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+Eliminar 20: eliminado
+[DESPUES] Altura: 4 | Inorden: [40, 60, 80, 100, 110, 120, 140] | BST valido: SI
+  80 -> izq: 40, der: 120
+  40 -> izq: null, der: 60
+  60 -> izq: null, der: null
+  120 -> izq: 100, der: 140
+  100 -> izq: null, der: 110
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+
+=== CASO 2: ELIMINAR NODO CON UN HIJO (100) ===
+[ANTES] Altura: 4 | Inorden: [20, 40, 60, 80, 100, 110, 120, 140] | BST valido: SI
+  80 -> izq: 40, der: 120
+  40 -> izq: 20, der: 60
+  20 -> izq: null, der: null
+  60 -> izq: null, der: null
+  120 -> izq: 100, der: 140
+  100 -> izq: null, der: 110
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+Eliminar 100: eliminado
+[DESPUES] Altura: 3 | Inorden: [20, 40, 60, 80, 110, 120, 140] | BST valido: SI
+  80 -> izq: 40, der: 120
+  40 -> izq: 20, der: 60
+  20 -> izq: null, der: null
+  60 -> izq: null, der: null
+  120 -> izq: 110, der: 140
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+
+=== CASO 3: ELIMINAR NODO CON DOS HIJOS - LA RAIZ (80) ===
+[ANTES] Altura: 4 | Inorden: [20, 40, 60, 80, 100, 110, 120, 140] | BST valido: SI
+  80 -> izq: 40, der: 120
+  40 -> izq: 20, der: 60
+  20 -> izq: null, der: null
+  60 -> izq: null, der: null
+  120 -> izq: 100, der: 140
+  100 -> izq: null, der: 110
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+Eliminar 80: eliminado
+[DESPUES] Altura: 3 | Inorden: [20, 40, 60, 100, 110, 120, 140] | BST valido: SI
+  100 -> izq: 40, der: 120
+  40 -> izq: 20, der: 60
+  20 -> izq: null, der: null
+  60 -> izq: null, der: null
+  120 -> izq: 110, der: 140
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+
+=== EXTRA: NODO CON DOS HIJOS QUE NO ES RAIZ (40) ===
+[ANTES] Altura: 4 | Inorden: [20, 40, 60, 80, 100, 110, 120, 140] | BST valido: SI
+  80 -> izq: 40, der: 120
+  40 -> izq: 20, der: 60
+  20 -> izq: null, der: null
+  60 -> izq: null, der: null
+  120 -> izq: 100, der: 140
+  100 -> izq: null, der: 110
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+Eliminar 40: eliminado
+[DESPUES] Altura: 4 | Inorden: [20, 60, 80, 100, 110, 120, 140] | BST valido: SI
+  80 -> izq: 60, der: 120
+  60 -> izq: 20, der: null
+  20 -> izq: null, der: null
+  120 -> izq: 100, der: 140
+  100 -> izq: null, der: 110
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+
+=== EXTRA: ELIMINAR UN VALOR INEXISTENTE (999) ===
+[ANTES] Altura: 4 | Inorden: [20, 40, 60, 80, 100, 110, 120, 140] | BST valido: SI
+  80 -> izq: 40, der: 120
+  40 -> izq: 20, der: 60
+  20 -> izq: null, der: null
+  60 -> izq: null, der: null
+  120 -> izq: 100, der: 140
+  100 -> izq: null, der: 110
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+Eliminar 999: no encontrado
+[DESPUES] Altura: 4 | Inorden: [20, 40, 60, 80, 100, 110, 120, 140] | BST valido: SI
+  80 -> izq: 40, der: 120
+  40 -> izq: 20, der: 60
+  20 -> izq: null, der: null
+  60 -> izq: null, der: null
+  120 -> izq: 100, der: 140
+  100 -> izq: null, der: 110
+  110 -> izq: null, der: null
+  140 -> izq: null, der: null
+
